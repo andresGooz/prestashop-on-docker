@@ -1,0 +1,10 @@
+Objetivo: instalar prestashop y mysql usando containers separados
+
+1) crear la red sobre la que se desplegarán los contenedores:
+  $ docker network create prestashop-net
+
+2) ingresar al folder Mysql/ y desplegar el contenedor de base de datos en modo detached
+  $ docker-compose up -d
+
+3) ingresar al folder Prestashop/ y desplegar el contenedor de prestashop en modo detached
+  $ docker-compose up -d

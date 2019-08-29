@@ -1,0 +1,18 @@
+version: "3.5"
+services:
+  prestashop:
+    image: prestashop/prestashop
+    restart: always
+    container_name: prestashop
+    environment:
+      - DB_SERVER=mysql
+    volumes:
+      - ./www:/var/www/html
+    ports:
+      - 8080:80
+    networks:
+      - outside
+networks:
+  outside:
+    external:
+      name: prestashop-net
