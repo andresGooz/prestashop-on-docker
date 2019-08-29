@@ -8,3 +8,4 @@ Objetivo: instalar prestashop y mysql usando containers separados
 
 3) ingresar al folder Prestashop/ y desplegar el contenedor de prestashop en modo detached
   $ docker-compose up -d
+4) ingresar a localhost:8080 y listo -> instalar y usar prestashop
